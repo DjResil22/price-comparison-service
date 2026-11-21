@@ -1,0 +1,60 @@
+# Build and Dependency Management
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Project Agent & Assistant Artifacts
+agent/
+skills/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.env
+
+# Runtime Logs & Dumps
+*.log
+logs/
+*.pid
+dump.rdb
+redis_data/
+
+# IDEs and Editors
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Visual Studio Code
+.vscode/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

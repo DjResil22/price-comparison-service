@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  ai:
+    openai:
+      api-key: test-key
+      base-url: http://localhost:8089
+
+logging:
+  level:
+    root: WARN
+    com.pricecomparison: DEBUG

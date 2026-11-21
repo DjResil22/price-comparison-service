@@ -1,0 +1,12 @@
+openapi: 3.0.3
+info:
+  title: Intelligent Product Price Aggregator API
+  version: 1.0.0
+  description: Price Aggregator API Contract
+paths:
+  /api/v1/health:
+    get:
+      summary: Health probe
+      responses:
+        '200':
+          description: OK
