@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.7</version>
+		<version>3.5.16</version>
 		<relativePath/>
 	</parent>
 	<groupId>com.pricecomparison</groupId>
@@ -16,13 +16,16 @@
 	<properties>
 		<java.version>21</java.version>
 		<spring-ai.version>1.0.0</spring-ai.version>
-		<resilience4j.version>2.3.0</resilience4j.version>
+		<resilience4j.version>2.4.0</resilience4j.version>
 		<bucket4j.version>8.10.1</bucket4j.version>
-		<jsoup.version>1.18.3</jsoup.version>
+		<jsoup.version>1.24.1</jsoup.version>
 		<jackson-databind-nullable.version>0.2.6</jackson-databind-nullable.version>
 		<testcontainers-redis.version>2.2.4</testcontainers-redis.version>
-		<wiremock.version>3.13.1</wiremock.version>
+		<wiremock.version>3.13.2</wiremock.version>
 		<openapi-generator.version>7.10.0</openapi-generator.version>
+		<tomcat.version>10.1.62</tomcat.version>
+		<netty.version>4.1.141.Final</netty.version>
+		<commons-compress.version>1.28.0</commons-compress.version>
 	</properties>
 
 	<dependencyManagement>
@@ -33,6 +36,11 @@
 				<version>${spring-ai.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-compress</artifactId>
+				<version>${commons-compress.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
