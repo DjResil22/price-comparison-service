@@ -10,6 +10,7 @@ build/
 # Project Agent & Assistant Artifacts
 agent/
 skills/
+task.md
 
 # Environment Variables & Secrets
 .env
